@@ -36,4 +36,8 @@ describe('AppComponent', () => {
     expect (/*compiled.querySelector*/('h1')/*?.textContent*/)
     .toContain('A new heading');
   })
+
+  it('should have a new heading', () => {
+    
+  })
 });
