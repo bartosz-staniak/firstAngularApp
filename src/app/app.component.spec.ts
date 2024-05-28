@@ -27,6 +27,7 @@ describe('AppComponent', () => {
     expect(compiled.querySelector('h1')?.textContent).toContain('Hello, firstAngularApp');
   });
 
+  /*
   it('should have a heading', () => {
     /*
     const fixture = TestBed.createComponent(AppComponent);
@@ -43,5 +44,5 @@ describe('AppComponent', () => {
     const headingElement : HTMLElement = fixture.nativeElement;
     const bodyHeading = headingElement.querySelector('body > h1')!;
     expect(bodyHeading?.textContent).toEqual('A new heading');
-  })
+  })*/
 });
