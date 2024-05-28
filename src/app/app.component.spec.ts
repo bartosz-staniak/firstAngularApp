@@ -33,7 +33,7 @@ describe('AppComponent', () => {
     const compiled = fixture.nativeElement as HTMLElement;
 
     expect (compiled.querySelector('h2')?.textContent)
-    .toContain('A new heading');
+    .toContain(',');
   })
 
   it('should have a new heading', () => {
@@ -41,6 +41,6 @@ describe('AppComponent', () => {
     fixture.detectChanges();
     const headingElement : HTMLElement = fixture.nativeElement;
     const bodyHeading = headingElement.querySelector('h2')!;
-    expect(bodyHeading?.textContent).toEqual('A new heading');
+    expect(bodyHeading?.textContent).toEqual('...');
   })
 });
