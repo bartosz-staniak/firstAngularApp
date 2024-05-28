@@ -29,5 +29,6 @@ describe('AppComponent', () => {
 
   it('should have a heading', () => {
     const fixture = TestBed.createComponent(AppComponent);
+    fixture.detectChanges();
   })
 });
