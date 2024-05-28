@@ -33,7 +33,7 @@ describe('AppComponent', () => {
     const compiled = fixture.nativeElement as HTMLElement;
 
     expect (compiled.querySelector('h2')?.textContent)
-    .toContain(',');
+    .toContain('g, t');
   })
 
   it('should have a new heading', () => {
