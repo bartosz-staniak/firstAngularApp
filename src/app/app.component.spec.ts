@@ -41,6 +41,6 @@ describe('AppComponent', () => {
     fixture.detectChanges();
     const headingElement : HTMLElement = fixture.nativeElement;
     const bodyHeading = headingElement.querySelector('h2')!;
-    expect(bodyHeading?.textContent).toEqual('...');
+    expect(bodyHeading?.textContent).toEqual('Testing, testing...');
   })
 });
