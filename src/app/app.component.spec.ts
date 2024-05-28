@@ -28,12 +28,11 @@ describe('AppComponent', () => {
   });
 
   it('should have a heading', () => {
-    /*
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    */
-    expect (/*compiled.querySelector*/('h1')/*?.textContent*/)
+
+    expect (compiled.querySelector('h1')?.textContent)
     .toContain('A new heading');
   })
 
