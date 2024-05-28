@@ -38,6 +38,7 @@ describe('AppComponent', () => {
   })
 
   it('should have a new heading', () => {
+    const fixture = TestBed.createComponent(AppComponent);
     const headingElement : HTMLElement = fixture.nativeElement;
   })
 });
