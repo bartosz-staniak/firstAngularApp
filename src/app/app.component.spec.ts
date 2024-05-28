@@ -41,5 +41,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const headingElement : HTMLElement = fixture.nativeElement;
     const bodyHeading = headingElement.querySelector('body > h1');
+    expect(bodyHeading?.textContent).toEqual('A new heading');
   })
 });
