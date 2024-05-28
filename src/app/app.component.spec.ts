@@ -40,7 +40,7 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const headingElement : HTMLElement = fixture.nativeElement;
-    const bodyHeading = headingElement.querySelector('body > h2')!;
+    const bodyHeading = headingElement.querySelector('h2')!;
     expect(bodyHeading?.textContent).toEqual('A new heading');
   })
 });
