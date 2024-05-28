@@ -38,6 +38,6 @@ describe('AppComponent', () => {
   })
 
   it('should have a new heading', () => {
-    
+    const headingElement : HTMLElement = fixture.nativeElement;
   })
 });
