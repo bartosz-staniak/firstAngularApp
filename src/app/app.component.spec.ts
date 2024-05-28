@@ -32,7 +32,7 @@ describe('AppComponent', () => {
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
 
-    expect (compiled.querySelector('h1')?.textContent)
+    expect (compiled.querySelector('h2')?.textContent)
     .toContain('A new heading');
   })
 
@@ -40,7 +40,7 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const headingElement : HTMLElement = fixture.nativeElement;
-    const bodyHeading = headingElement.querySelector('body > h1')!;
+    const bodyHeading = headingElement.querySelector('body > h2')!;
     expect(bodyHeading?.textContent).toEqual('A new heading');
   })
 });
