@@ -33,7 +33,7 @@ describe('AppComponent', () => {
     const compiled = fixture.nativeElement as HTMLElement;
 
     expect (compiled.querySelector('h2'))
-    .toBeTruthy;
+    .toBe;
   })
 
   it('should have an h2 heading', () => {
