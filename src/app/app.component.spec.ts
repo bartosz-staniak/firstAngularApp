@@ -27,7 +27,7 @@ describe('AppComponent', () => {
     expect(compiled.querySelector('h1')?.textContent).toContain('Hello, firstAngularApp');
   });
 
-  it('should have an h2 heading present', () => {
+  it('should have a div present', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
