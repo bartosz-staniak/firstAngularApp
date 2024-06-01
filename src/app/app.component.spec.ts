@@ -35,6 +35,14 @@ describe('AppComponent', () => {
     expect (compiled.querySelector('h2')?.hidden).toBe(false);
   })
 
+  it('should have an h2 heading present', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement as HTMLElement;
+
+    expect (compiled.querySelector('h2')?.hidden).toBe(false);
+  })
+
   it('should have a paragraph present', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
