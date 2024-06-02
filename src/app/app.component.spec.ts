@@ -40,7 +40,7 @@ describe('AppComponent', () => {
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
 
-    expect (compiled.querySelector('div')?.hidden).toBe(false);
+    expect (document.querySelector("body > app-root > main > div > div.left-side")).toBe(false);
   })
 
   it('should have an h2 heading present', () => {
