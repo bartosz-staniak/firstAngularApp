@@ -35,7 +35,7 @@ describe('AppComponent', () => {
     expect (compiled.querySelector('div')?.hidden).toBe(false);
   })
 
-  it('should have a div present', () => {
+  it('should have a left-side div present', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
