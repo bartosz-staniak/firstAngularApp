@@ -40,7 +40,7 @@ describe('AppComponent', () => {
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
 
-    expect (compiled.classList.contains("left-side"));
+    expect (compiled.classList.contains("left-side")).toBe(true);
   })
 
   it('should have an h2 heading present', () => {
