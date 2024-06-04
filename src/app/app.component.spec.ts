@@ -20,6 +20,12 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('firstAngularApp');
   });
 
+  it(`should have the 'Testing a new variable' about variable`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect(app.about).toEqual('failing check');
+  })
+
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
