@@ -20,18 +20,18 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('firstAngularApp');
   });
 
-  it(`should have the 'Testing a new component variable' about variable`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.about).toEqual('Testing a new component variable');
-  })
-
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('h1')?.textContent).toContain('Hello, firstAngularApp');
   });
+
+  it(`should have the 'Testing a new component variable' about variable`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect(app.about).toEqual('Testing a new component variable');
+  })
 
   it('should have a div present', () => {
     const fixture = TestBed.createComponent(AppComponent);
