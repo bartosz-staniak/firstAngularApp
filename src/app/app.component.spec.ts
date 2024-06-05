@@ -23,7 +23,7 @@ describe('AppComponent', () => {
   it(`should have the 'Testing a new variable' about variable`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.about).toEqual('failing check');
+    expect(app.about).toEqual('Testing a new');
   })
 
   it('should render title', () => {
