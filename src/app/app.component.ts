@@ -10,5 +10,5 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'firstAngularApp';
-  about = 'Testing a new variable';
+  about = 'Testing a new component variable';
 }
