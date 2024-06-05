@@ -8,6 +8,8 @@ describe('AppComponent', () => {
     }).compileComponents();
   });
 
+  int caseNumber = 1;
+
   it('should create the app', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
