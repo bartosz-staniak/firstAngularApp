@@ -33,7 +33,7 @@ describe('AppComponent', () => {
     expect(app.about).toEqual('Testing a new component variable');
   })
 
-  it('should render title', () => {
+  it('should render "about" component property', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
