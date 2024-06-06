@@ -37,7 +37,7 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h3')?.textContent).toContain({{ about }});
+    expect(compiled.querySelector('h3')?.textContent).toContain("{{ about }}");
   });
 
   it('should have a div present', () => {
