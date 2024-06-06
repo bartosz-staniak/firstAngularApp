@@ -33,6 +33,13 @@ describe('AppComponent', () => {
     expect(app.about).toEqual('Testing a new component variable');
   })
 
+  it('should render title', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, firstAngularApp');
+  });
+
   it('should have a div present', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
