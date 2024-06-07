@@ -54,7 +54,7 @@ describe('AppComponent', () => {
     const compiled = fixture.nativeElement as HTMLElement;
     const app = fixture.componentInstance;
     expect(compiled.querySelector('span')?.textContent).toContain('Testing a new component variable');
-    expect(compiled.querySelector('span')?.textContent).toContain(app.about);
+    expect(compiled.querySelector('h1')?.textContent).toContain(app.about);
   });
 
   it('should have a div present', () => {
