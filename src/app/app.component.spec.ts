@@ -48,6 +48,14 @@ describe('AppComponent', () => {
     expect(compiled.querySelector('span')?.textContent).toContain(app.about);
   });
 
+  it('should render "about" component property (component expectation)', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement as HTMLElement;
+    const app = fixture.componentInstance;
+    expect(compiled.querySelector('span')?.textContent).toContain(app.about);
+  });
+
   it('should have a div present', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
