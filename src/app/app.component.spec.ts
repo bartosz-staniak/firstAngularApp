@@ -53,7 +53,7 @@ describe('AppComponent', () => {
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
     const app = fixture.componentInstance;
-    expect(compiled.querySelector('span')?.textContent).toContain('Resting a new component variable');
+    expect(compiled.querySelector('span')?.textContent).toContain('Testing a new component variable');
     expect(compiled.querySelector('span')?.textContent).toContain(app.about);
   });
 
