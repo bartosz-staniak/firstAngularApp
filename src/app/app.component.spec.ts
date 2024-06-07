@@ -44,6 +44,7 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
+    const app = fixture.componentInstance;
     expect(compiled.querySelector('span')?.textContent).toContain('Testing a new component variable');
   });
 
