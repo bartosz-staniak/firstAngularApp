@@ -40,6 +40,13 @@ describe('AppComponent', () => {
     expect(compiled.querySelector('span')?.textContent).toContain('Testing a new component variable');
   });
 
+  it('should render "about" component property', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.querySelector('span')?.textContent).toContain('Testing a new component variable');
+  });
+
   it('should have a div present', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
