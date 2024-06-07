@@ -48,7 +48,7 @@ describe('AppComponent', () => {
     expect(compiled.querySelector('span')?.textContent).toContain(app.about);
   });
 
-  it('should render "about" component property (component expectation)', () => {
+  it('should render "about" component property (hybrid expectation)', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
