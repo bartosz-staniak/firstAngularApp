@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 
 @Component({
     selector: 'app-root', //was 'selector-name'
+    imports: [RouterOutlet],
     templateUrl: 'snippetsTest.component.html'
 })
 
